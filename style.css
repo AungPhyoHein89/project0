@@ -1,0 +1,195 @@
+/* ===============================================
+    1. Global Styles (Basic Setups)
+   =============================================== */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #202124;
+  background-color: #fff;
+}
+
+/* ===============================================
+    box-sizing at Search bar input Area
+   =============================================== */
+input[type="text"] {
+  box-sizing: border-box;
+}
+
+/* ===============================================
+    2. Navigation
+   =============================================== */
+header {
+  padding: 15px 30px;
+}
+
+.nav-bar {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar li {
+  margin-left: 20px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.nav-bar a:hover {
+  text-decoration: underline;
+}
+
+/* ===============================================
+    3. Main & Image Search Layout
+   =============================================== */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+}
+
+/* Google Logo Photo size*/
+
+img {
+  width: 272px;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+/* ===============================================
+    4. Search Bar UI (Google)
+   =============================================== */
+
+.search-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.search-bar input[type="text"] {
+  width: 584px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  padding: 12px 20px;
+  font-size: 16px;
+  outline: none;
+  background-color: #fff;
+  transition: box-shadow 0.15s;
+}
+
+.search-bar input[type="text"]:hover,
+.search-bar input[type="text"]:focus {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0.5);
+}
+
+.search-button {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.search-button input[type="submit"] {
+  background-color: #f8f9fa;
+  border: 1px solid#f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-size: 14px;
+  padding: 0 16px;
+  height: 36px;
+  min-width: 54px;
+  cursor: pointer;
+}
+
+.search-button input[type="submit"]:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+  border: 1px solid #dad0e0;
+}
+
+/* Advanced search Layout */
+
+
+.advanced-title {
+  color: #d93025;
+  font-size: 20px;
+  margin: 30px 0;
+}
+
+/* Advanced main area */
+.advanced-main {
+  display: block;
+  max-width: 1000px;
+  height: auto;
+  margin: 40px auto;
+  padding: 0 40px;
+}
+
+.section-title {
+  font-size: 16px;
+  color: #202124;
+  margin-bottom: 30px;
+}
+
+.advanced-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.advanced-group label {
+  width: 230px;
+  color: #5f6368;
+  font-size: 14px;
+  text-align: left;
+}
+
+.advanced-group input[type="text"] {
+  width: 550px;
+  height: 35px;
+  padding: 5px 8px;
+  border: 1px solid #5f6368;
+  outline: none;
+  font-size: 14px;
+}
+
+.advanced-group input[type="text"]:hover,
+.advanced-group input[type="text"]:focus {
+  border: 1px solid #4d90fe;
+}
+
+.advanced-button-area {
+  width: 780px; /* Label 230px + Input 550px = 780px*/
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 25px;
+}
+
+.advanced-btn {
+  background-color: #4d90fe;
+  color: #fff;
+  border: 1px solid #3079ed;
+  font-size: 14px;
+  padding: 8px 15px;
+  height: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.advanced-btn:hover {
+  background-color: #357ae8;
+  border: 1px solid #2f5bb7;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
